@@ -18,6 +18,7 @@ func main() {
 		ctx.HTML("<p>this is users page.</p>")
 	})
 
+	app.StaticWeb("/assets", "./assets")
 	app.Run(iris.Addr(":8080"), iris.WithCharset("UTF-8"))
 }
 
